@@ -1,0 +1,88 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  #brand{
+    text-transform: uppercase;
+  }
+  .card img {
+    width: 100%;
+    display: block;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content p {
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .card-content h1 {
+    font-size: 20px;
+    color: hsl(212, 21%, 14%);
+    margin: 10px 0;
+  }
+
+  .card-content h2 {
+    color: hsl(158, 36%, 37%);
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .card-content span {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .card-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+
+  .card-content button:hover {
+    background-color: hsl(158, 40%, 30%);
+  }
+
+  @media (min-width: 768px) {
+    .card {
+      flex-direction: row;
+      max-width: 600px;
+    }
+
+    .card img {
+      width: 50%;
+    }
+
+    .card-content {
+      padding: 30px;
+    }
+  }
+  
